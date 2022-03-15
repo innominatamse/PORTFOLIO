@@ -1,0 +1,126 @@
+:root {
+	--page-background-color: #FAFAFA;
+	--main-border-color: #CACFD6;
+	--text-primary-color: #517664;
+	--text-seconary-color: #D6E5E3;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.5rem;
+	color: var(--text-primary-color);
+	height: 100vh;
+	background-color: var(--page-background-color);
+}
+
+.title {
+	text-align: center;
+	padding: 5rem;
+}
+
+.input-t {
+	width: 100%;
+	height: 5rem;
+	font-size: 2rem;
+	border: none;
+	padding: 2rem;
+	box-shadow: .2rem .2rem .1rem var(--main-border-color), -.2rem 0 1rem var(--main-border-color);
+}
+
+.input-t::placeholder {
+	font-style: italic;
+}
+
+.button {
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+	padding: .5rem;
+	text-align: center;
+}
+
+.button_active {
+	border: 1px solid var(--main-border-color)
+}
+.button:hover {
+	opacity: .8;
+}
+
+.button__remove {
+	background-color: transparent;
+	position: relative;
+	display: none;
+}
+
+.button__remove::after {
+	position: absolute;
+	top: -5px;
+	content: 'X';
+	display: block;
+	height: 2rem;
+	width: 2rem;
+	border-radius: 50%;
+}
+
+.button__remove:hover::after {
+	border: 1px solid var(--main-border-color);
+}
+
+.list__item:hover .button__remove{
+	display: block;
+}
+
+.list {
+	list-style: none;
+}
+
+.list__item {
+	display: flex;
+	flex-direction: row;
+	height: 3.2rem;
+	justify-content: space-between;
+	padding: 2rem;
+	border: 1px solid var(--main-border-color);
+	margin: 1rem;
+	align-items: center;
+	background-color: white;
+}
+
+.list__item_completed {
+	text-decoration: line-through;
+	color: var(--text-seconary-color);
+}
+
+.footer {
+	border-top: 1px solid var(--main-border-color);
+	margin-top: 2rem;
+	padding: 2rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.filter {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	justify-content: space-around;
+	flex-grow: 5;
+}
+
+
+.todo {
+	max-width: 600px;
+	padding: 2rem;
+	margin: 0 auto;
+}
