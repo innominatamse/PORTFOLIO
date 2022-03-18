@@ -7,16 +7,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ToDo</title>
 	<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 	<div class="todo">
 		<h1 class="title">ToDo List</h1>
-		<header>
-			<input class="input-t" type="text" placeholder="what need to do?" />
-		</header>
+		<input class="input-t" type="text" placeholder="what need to do?" />
 		<main>
 			<ul class="list">
+				<li class="list__item">
+					task 1
+				</li>
+				<li class="list__item">
+					task 2
+				</li>
+				<li class="list__item">
+					task 3
+				</li>
+				<li class="list__item">
+					task 4
+				</li>
+				<li class="list__item list__item_completed">
+					task completed
+				</li>
+				<li class="list__item">
+					task 5
+				</li>
 			</ul>
 		</main>
 		<footer class="footer">
@@ -28,7 +45,10 @@
 			</ul>
 		</footer>
 	</div>
-	<script src="index.js"></script>
+	<script type="module" src="src/filter.js"></script>
+	<script type="module" src="src/index.js"></script>
+
+
 </body>
 
 </html>
