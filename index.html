@@ -7,92 +7,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="slyles.css">
-    <script src="script.js"></script>
+   
 </head>
 
 <body>
     <div class="calculator">
         <div class="calculator__container">
-            <span class="calculator__input">
-                2
-            </span>
+            <input class="" type="number">
             <div class="calculator__list">
-                <button class="calculator__item calculator__item_additional">
-                    <span class="clear">
+                <button class="calculator__item calculator__item_additional"  data-operator="clear">
+                    <!-- <span class="clear"> -->
                         AC
-                    </span>
+                    <!-- </span> -->
                 </button>
                 <button class="calculator__item calculator__item_additional">
                     <span class="module">
                         +/-
                     </span>
                 </button>
-                <button class="calculator__item calculator__item_additional">
-                    <span class="percent">
+                <button class="calculator__item calculator__item_additional" data-operator="percent">
+                    <!-- <span class="percent" > -->
                         %
-                    </span>
+                    <!-- </span> -->
                 </button>
-                <button class="calculator__item calculator__item_main">
-                    <span class="division">
+                <button class="calculator__item calculator__item_main" data-operator="division">
+                    <!-- <span class="division" > -->
                         ÷
-                    </span>
+                    <!-- </span> -->
                 </button>
-                <button class="calculator__item calculator__item_number">
+                <button class="calculator__item calculator__item_number" data-number="7">
                     7
                 </button>
-                <button class="calculator__item calculator__item_number">
+                <button class="calculator__item calculator__item_number" data-number="8">
                     8
                 </button>
-                <button class="calculator__item calculator__item_number">
+                <button class="calculator__item calculator__item_number" data-number="9">
                     9
                 </button>
-                <button class="calculator__item calculator__item_main">
-                    <span class="multiplication">
+                <button class="calculator__item calculator__item_main" data-operator="multiplication">
+                    <!-- <span class="multiplication" > -->
                         x
-                    </span>
+                    <!-- </span> -->
                 </button>
-                <button class="calculator__item calculator__item_number">
+                <button class="calculator__item calculator__item_number" data-number="4">
                     4
                 </button>
-                <button class="calculator__item calculator__item_number">
+                <button class="calculator__item calculator__item_number" data-number="5">
                     5
                 </button>
-                <button class="calculator__item calculator__item_number">
+                <button class="calculator__item calculator__item_number" data-number="6">
                     6
                 </button>
-                <button class="calculator__item calculator__item_main">
-                    <span class="minus">
+                <button class="calculator__item calculator__item_main" data-operator="subtraction">
+                    <!-- <span class="minus"  > -->
                         -
-                    </span>
+                    <!-- </span> -->
                 </button>
-                <button class="calculator__item calculator__item_number">
+                <button class="calculator__item calculator__item_number" data-number="1">
                     1
                 </button>
-                <button class="calculator__item calculator__item_number">
+                <button class="calculator__item calculator__item_number" data-number="2">
                     2
                 </button>
-                <button class="calculator__item calculator__item_number">
+                <button class="calculator__item calculator__item_number" data-number="3">
                     3
                 </button>
-                <button class="calculator__item calculator__item_main">
-                    <span class="plus">
+                <button class="calculator__item calculator__item_main" data-operator="addition">
+                    <!-- <span class="plus"  > -->
                         +
-                    </span>
+                    <!-- </span> -->
                 </button>
                 <button class="calculator__item_zero">
                     <span class="psevdo-elem"></span>
-                    <span class="calculator__number">0</span>
+                    <span class="calculator__number" data-number="0">0</span>
                 </button>
                 <button class="calculator__item calculator__item_number">
                     .
                 </button>
-                <button class="calculator__item calculator__item_main">
-                    <span class="equals">
+                <button class="calculator__item calculator__item_main" data-operator="equals">
+                    <!-- <span class="equals" > -->
                         =
-                    </span>
+                    <!-- </span> -->
                 </button>
             </div>
         </div>
+        <script src="calculate.js"></script>
 </body>
 
 </html>
