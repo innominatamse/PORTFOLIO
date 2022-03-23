@@ -1,0 +1,214 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@font-face {
+  font-family: "AireExterior";
+  src: url("../fonts/AireExterior.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "pulsar-original";
+  src: url("../fonts/pulsar-original.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+html {
+  background: #141C24;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  background: #141C24;
+}
+
+.header__container {
+  max-width: 1156px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 47px 0px;
+}
+
+.header__logo {
+  background: no-repeat url(../img/logo-header.svg);
+  max-width: 189px;
+  width: 100%;
+  height: 27.45px;
+}
+
+.header__nav {
+  max-width: 866px;
+  width: 100%;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__link {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 180%;
+  color: #FFFFFF;
+}
+
+.header__link:hover::after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 100%;
+  background: #00C5FF;
+  height: 1px;
+}
+
+.header__link_active {
+  font-weight: 400;
+}
+
+.header__link_active::after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 100%;
+  background: #00C5FF;
+  height: 1px;
+}
+
+.header__content {
+  position: relative;
+  z-index: -1;
+  margin: -97px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__slider {
+  width: 100%;
+}
+
+.slider__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  max-width: 1327px;
+  width: 100%;
+  height: 777px;
+  background-size: contain;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.slider__image_first {
+  background-image: url(../img/slideFirst.png);
+}
+
+.slider__image_second {
+  display: none;
+  background-image: url(../img/slideSecond.png);
+}
+
+.slider__image_third {
+  background-image: url(../img/slideThird.png);
+  display: none;
+}
+
+.slider__image_four {
+  background-image: url(../img/slideFourth.png);
+  display: none;
+}
+
+.slider__content {
+  padding-bottom: 165px;
+}
+
+.slider__substrate {
+  background: rgba(9, 189, 242, 0.6);
+  -webkit-filter: blur(45px);
+          filter: blur(45px);
+  border-radius: 24px;
+  position: absolute;
+  width: 100%;
+  max-width: 1327px;
+  height: 777px;
+  margin: 0 auto;
+}
+
+.slider__subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.slider__title {
+  font-family: 'AireExterior';
+  text-align: center;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.slider__upgrade {
+  margin: 97px auto 0;
+}
+
+.btn-upgrade {
+  cursor: pointer;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'AireExterior';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  padding: 18px;
+  max-width: 251px;
+  width: 100%;
+  text-align: center;
+  background-image: url(../img/button-bg.svg);
+}
+/*# sourceMappingURL=styles.css.map */
