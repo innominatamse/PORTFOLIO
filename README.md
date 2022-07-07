@@ -1,2 +1,2 @@
 # Portfolio
-https://innominatamse.github.io/rsschool-cv/
+https://innominatamse.github.io/index/
